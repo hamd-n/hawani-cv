@@ -1,0 +1,114 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: linear-gradient(120deg, #fefeff 0%, #f5f3ff 40%, #fdf2f8 70%, #fff7ed 100%);
+    
+    min-height: 100vh;
+}
+
+.summury, p{
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0 20px 20px 20px;
+}
+
+.summury{
+    margin: 40px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.personal-details {
+    color: #333;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.skills {
+    color: #333;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.languages {
+    color: #333;
+    font-size: 24px;
+    margin: 20px;
+}
+.experience {
+    color: #333;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.hobbies {
+    color: #333;
+    font-size: 24px;
+    margin: 20px;
+}
+
+/* Responsive rules */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .summury, p {
+        margin: 20px 16px 16px 16px;
+    }
+
+    .summury {
+        margin: 24px;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+        margin: 12px;
+    }
+
+    .personal-details,
+    .skills,
+    .languages,
+    .hobbies,
+    .experience {
+        font-size: 18px;
+        margin: 12px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .summury, p {
+        margin: 16px 12px 12px 12px;
+        font-size: 15px;
+    }
+
+    .personal-details,
+    .experience,
+    .skills,
+    .languages,
+    .hobbies,
+    .experience {
+        font-size: 16px;
+        margin: 8px;
+    }
+}
